@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-import { Jumbotron } from 'react-bootstrap'
-
-
+import Landing from './Landing'
+import Projects from './Projects'
+import { Button } from 'react-bootstrap';
 export default class App extends Component {
     render() {
         return (
             <div>
-                <Jumbotron>
-                    <h1>Hello and thanks for downloading this boilerplate!</h1>
-                    <h3>Start by editing './src/components/App.js'...</h3>
-                    <p>Styles are available in './src/styles.css'</p>
-                </Jumbotron>
+            <Landing />
+            <Projects />
+            <Button className='fixed-btn' href='#landing'>Back to Top</Button>
             </div>
         )
     }

@@ -1,3 +1,5 @@
+const OpenBrowserPlugin = require('open-browser-webpack-plugin')
+
 const config = {
     devtool: "eval-source-map",
     devServer: {
@@ -20,7 +22,10 @@ const config = {
                 ]
             }
         ]
-    }
+    },
+    plugins: [
+        new OpenBrowserPlugin({ url: 'http://localhost:8000', delay: 250 })
+    ]
 }
 
 module.exports = config

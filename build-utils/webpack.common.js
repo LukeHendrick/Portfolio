@@ -11,16 +11,6 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.png/,
-                use: [
-                    {
-                        loader: "url-loader",
-                        options: { limit: 10000 }
-                    }
-            
-                ]
-            },
-            {
                 test: /\.js$/,
                 exclude: /(node_modules)/,
                 use: {
@@ -29,7 +19,28 @@ const config = {
                         presets: ['react', 'latest']
                     }
                 }
-            }
+            },
+            {
+                test: /\.(eot|woff|woff2|ttf|svg|gif)(\?\S*)?$/,
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'fonts/',
+                        publicPath: '../'
+                    }
+                }]
+            },
+            {
+                test: /\.(png|jpe?g)/,
+                use: [
+                    {
+                        loader: "url-loader",
+                        options: { limit: 10000 }
+                    }
+
+                ]
+            },
         ]
     },
 
