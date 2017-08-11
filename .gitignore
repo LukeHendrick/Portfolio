@@ -1,4 +1,2 @@
 node_modules
 dist
-!dist/manifest.json
-!dist/service-worker.js
