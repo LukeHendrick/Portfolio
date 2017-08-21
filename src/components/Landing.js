@@ -16,7 +16,29 @@ export default class Landing extends Component {
     }
 
     componentDidMount() {
-        setTimeout(this.fadeIn('name'), 1200);
+        let name = document.getElementsByClassName('name');
+        let image = document.getElementsByClassName('myImg');
+        let git = document.getElementsByClassName('fa')
+        window.setTimeout(() => {
+            image[0].className += ' testLoad'
+        }, 100);
+        window.setTimeout(() => {
+            name[0].className += ' testLoad'
+        }, 500);
+        window.setTimeout(() => {
+            git[0].className += ' testLoad'
+        }, 1500)
+        window.setTimeout(() => {
+            git[1].className += ' testLoad'
+        }, 1500)
+        window.setTimeout(() => {
+            git[2].className += ' testLoad'
+        }, 1500)
+        window.setTimeout(() => {
+            git[3].className += ' testLoad'
+        }, 1500)
+    
+    
     }
 
     render() {
@@ -25,23 +47,23 @@ export default class Landing extends Component {
             <Grid className='container-fluid'>
                 <Row>
                     <Col xs={12} lg={6}>
-                        <Image src={myProfile} responsive circle />
+                        <Image className="myImg" src={myProfile} responsive circle />
                     </Col>
                     <Col xs={6} lg={6}>
                         <h1 className='name'>Luke Hendrick</h1>
                     </Col>
                     <Col xs={2}>
-                        <a href="https://www.github.com/LukeHendrick"><FontAwesome name='github-square' /></a>
+                        <a className="text-shadow" ref="https://www.github.com/LukeHendrick"><FontAwesome name='github-square' /></a>
                     </Col>
                     <Col xs={2}>
-                        <a href="https://www.twitter.com/LukeHendrick521"><FontAwesome name='twitter-square' /></a>
+                        <a className="text-shadow" href="https://www.twitter.com/LukeHendrick521"><FontAwesome name='twitter-square' /></a>
                     </Col>
                     <Col xs={2}>
-                        <a href="https://www.github.com/LukeHendrick"><FontAwesome name='medium' /></a>
+                        <a className="text-shadow" href="https://www.github.com/LukeHendrick"><FontAwesome name='medium' /></a>
                     </Col>
                 </Row>
                 <Row>
-                    <a href="#projects"><FontAwesome name="chevron-down" /></a>
+                    <a className="text-shadow"  href="#projects"><FontAwesome name="chevron-down" /></a>
                 </Row>
             </Grid>
             </div>

@@ -1,6 +1,20 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
 }
+.container-fluid {
+    margin-top: 10%;
+}
+.fa {
+    margin-left: 1rem;
+    font-size: 9rem;
+    text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    transition-delay: 1s;
+}
+.text-shadow {
+    transition: text-shadow 2s;
+}
 .landing {
     background-color: #6600cc;
     color: white;
@@ -17,9 +31,6 @@ body {
     padding-left: 5rem;
     padding-right: 5rem;
 }
-.thumb {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
 a {
     text-decoration: none;
     color: white;
@@ -27,25 +38,30 @@ a {
 a:hover {
     color: white;
 }
-img {
+.thumb {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .name {
     margin-top: 35%;
     font-size: 9rem;
+    opacity: 0;
+    transition: opacity 1s ease-in;
     text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.myImg {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+.testLoad {
+    visibility: visible;
+    opacity: 1;
 }
 .project-title {
     margin-top: 0;
 }
-.fa {
-    margin-left: 1rem;
-    font-size: 9rem;
-    transition: text-shadow 1s;
-    text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
 
-.fa:hover {
+
+.text-shadow:hover {
     text-shadow: 1px 1px 15px rgba(210, 0, 170,1);
 }
 span.fa-chevron-down {
@@ -53,7 +69,7 @@ span.fa-chevron-down {
     margin-left: 45.3%;
     animation-name: bounce;
     animation-duration: 1s;
-    animation-delay: 2s;
+    animation-delay: 3s;
     animation-fill-mode: both;
 }
 
