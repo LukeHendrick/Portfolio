@@ -1,8 +1,7 @@
-// Set this to true for production
 var doCache = true;
 
 // Name our cache
-var CACHE_NAME = 'chews-food-cache-v1';
+var CACHE_NAME = 'portfolio-cache-v1';
 
 // Delete old caches that are not our current one!
 self.addEventListener("activate", event => {

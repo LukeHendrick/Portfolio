@@ -21,7 +21,7 @@ const config = {
                 }
             },
             {
-                test: /\.(eot|woff|woff2|ttf|svg|gif)(\?\S*)?$/,
+                test: /\.(eot|woff|woff2|ttf|svg)(\?\S*)?$/,
                 use: [{
                     loader: 'file-loader',
                     options: {
@@ -32,7 +32,7 @@ const config = {
                 }]
             },
             {
-                test: /\.(png|jpe?g)/,
+                test: /\.(png|jpe?g|gif)/,
                 use: [
                     {
                         loader: "url-loader",

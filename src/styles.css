@@ -2,19 +2,17 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 .container-fluid {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .fa {
     margin-left: 1rem;
-    font-size: 9rem;
+    font-size: 10rem;
     text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     opacity: 0;
-    transition: opacity 1s ease-in;
-    transition-delay: 1s;
+    transition: opacity 1s ease-in, text-shadow 1s;
+    transition-delay: opacity 1s;
 }
-.text-shadow {
-    transition: text-shadow 2s;
-}
+
 .landing {
     background-color: #6600cc;
     color: white;
@@ -42,13 +40,16 @@ a:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .name {
-    margin-top: 35%;
+    white-space: nowrap;
+    margin-top: 25%;
+    margin-bottom: 10%;
     font-size: 9rem;
     opacity: 0;
     transition: opacity 1s ease-in;
     text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 .myImg {
+    margin-left: -5%;
     opacity: 0;
     transition: opacity 1s ease-in;
 }
@@ -57,16 +58,17 @@ a:hover {
     opacity: 1;
 }
 .project-title {
-    margin-top: 0;
+    margin-left: 2rem;
+    font-size: 6rem;
 }
 
 
-.text-shadow:hover {
+.fa:hover {
     text-shadow: 1px 1px 15px rgba(210, 0, 170,1);
 }
 span.fa-chevron-down {
-    margin-top: 8%;
-    margin-left: 45.3%;
+    margin-top: -4%;
+    margin-left: 46%;
     animation-name: bounce;
     animation-duration: 1s;
     animation-delay: 3s;
@@ -88,7 +90,7 @@ span.fa-chevron-down {
 
 @media (max-width: 767px) {
     .container-fluid {
-        margin-top: 20%;
+        margin-top: 15%;
     }
     .fa {
         margin-left: -1.5rem;
