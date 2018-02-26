@@ -90,19 +90,26 @@ span.fa-chevron-down {
 
 @media (max-width: 767px) {
     .container-fluid {
-        margin-top: 15%;
+        margin-top: 5%;
+    }
+    .myImg {
+        margin-left: 0%;
+    }
+    .col-xs-2 {
+        padding-right: 5rem !important;
     }
     .fa {
-        margin-left: -1.5rem;
-        margin-top: 4.75rem;
+        margin-left: -11rem;
+        margin-top: 8rem;
         font-size: 6rem;
     }
     .name {
         font-size: 5rem;
-        margin-top: 0rem;
+        margin-left:4rem;
+        margin-top: 1rem;
     }
     span.fa-chevron-down {
-        margin-top: 15%;
+        margin-top: 10%;
         margin-left: 41.8%;
     }
 }

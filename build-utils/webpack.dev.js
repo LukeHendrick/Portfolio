@@ -4,6 +4,7 @@ const config = {
     devtool: "eval-source-map",
     devServer: {
         port: 8000,
+        disableHostCheck: true,
         contentBase: './dist',
         proxy: {
             '/api/*': {
