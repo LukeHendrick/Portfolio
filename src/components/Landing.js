@@ -53,13 +53,13 @@ export default class Landing extends Component {
                         <h1 className='name'>Luke Hendrick</h1>
                     </Col>
                     <Col xs={2}>
-                        <a className="text-shadow" ref="https://www.github.com/LukeHendrick"><FontAwesome name='github-square' /></a>
+                        <a className="text-shadow" href="https://www.github.com/LukeHendrick"><FontAwesome name='github-square' /></a>
                     </Col>
                     <Col xs={2}>
-                        <a className="text-shadow" href="https://www.twitter.com/LukeHendrick521"><FontAwesome name='twitter-square' /></a>
+                        <a className="text-shadow" href="https://www.linkedin.com/in/luke-hendrick-5a5a14127"><FontAwesome name='linkedin-square' /></a>
                     </Col>
                     <Col xs={2}>
-                        <a className="text-shadow" href="https://www.github.com/LukeHendrick"><FontAwesome name='medium' /></a>
+                        <a className="text-shadow" href="mailto:lukehendrick41@gmail.com"><FontAwesome name='envelope-square' /></a>    
                     </Col>
                 </Row>
                 <Row>

@@ -1,17 +1,6 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
 }
-.container-fluid {
-    margin-top: 5%;
-}
-.fa {
-    margin-left: 1rem;
-    font-size: 10rem;
-    text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    opacity: 0;
-    transition: opacity 1s ease-in, text-shadow 1s;
-    transition-delay: opacity 1s;
-}
 
 .landing {
     background-color: #6600cc;
@@ -39,24 +28,7 @@ a:hover {
 .thumb {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-.name {
-    white-space: nowrap;
-    margin-top: 25%;
-    margin-bottom: 10%;
-    font-size: 9rem;
-    opacity: 0;
-    transition: opacity 1s ease-in;
-    text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-.myImg {
-    margin-left: -5%;
-    opacity: 0;
-    transition: opacity 1s ease-in;
-}
-.testLoad {
-    visibility: visible;
-    opacity: 1;
-}
+
 .project-title {
     margin-left: 2rem;
     font-size: 6rem;
@@ -66,9 +38,45 @@ a:hover {
 .fa:hover {
     text-shadow: 1px 1px 15px rgba(210, 0, 170,1);
 }
+
+.fixed-btn {
+    position: fixed;
+    top: 95%;
+    right: 1%;
+    z-index: 999;
+}
+.container-fluid {
+    margin-top: 5%;
+}
+.myImg {
+    margin-left: 0%;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+.col-xs-2 {
+    padding-right: 5rem !important;
+}
+.fa {
+    margin-left: -11rem;
+    margin-top: 8rem;
+    font-size: 6rem;
+    text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    opacity: 0;
+    transition: opacity 1s ease-in, text-shadow 1s;
+    transition-delay: opacity 1s;
+}
+.name {
+    font-size: 5rem;
+    margin-left:4rem;
+    white-space: nowrap;
+    margin-top: 1rem;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 span.fa-chevron-down {
-    margin-top: -4%;
-    margin-left: 46%;
+    margin-top: 10%;
+    margin-left: 41.8%;
     animation-name: bounce;
     animation-duration: 1s;
     animation-delay: 3s;
@@ -81,35 +89,62 @@ span.fa-chevron-down {
     60% {transform: translateY(-15px);}
 }
 
-.fixed-btn {
-    position: fixed;
-    top: 95%;
-    right: 1%;
-    z-index: 999;
+.testLoad {
+    visibility: visible;
+    opacity: 1;
 }
-
-@media (max-width: 767px) {
-    .container-fluid {
-        margin-top: 5%;
-    }
-    .myImg {
-        margin-left: 0%;
-    }
-    .col-xs-2 {
-        padding-right: 5rem !important;
+@media (min-width: 800px) {
+    .name {
+        margin-top: 25%;
+        font-size: 8rem;
     }
     .fa {
-        margin-left: -11rem;
-        margin-top: 8rem;
-        font-size: 6rem;
-    }
-    .name {
-        font-size: 5rem;
-        margin-left:4rem;
-        margin-top: 1rem;
+        font-size: 10rem;
+        margin-left: 40%;
     }
     span.fa-chevron-down {
-        margin-top: 10%;
-        margin-left: 41.8%;
+        margin-top: -4.5rem;
+        margin-left: 47%;
     }
+
+} 
+
+@media (min-width: 1300px) {
+    .name {
+        font-size: 14rem;
+        margin-top: 45%;
+        margin-left: -5rem;
+    }
+    .fa {
+        font-size: 14rem;
+        margin-left: -30%;
+    }
+    .myImg {
+        margin-left: -25%;
+        margin-top: 29%
+    }
+    span.fa-chevron-down {
+        margin-top: 10rem;
+        margin-left: 45%
+    }
+    span + span {
+        margin-left: 10rem !important;
+    }
+}
+@media (max-width: 376px) {
+    .name {
+        font-size: 5rem;
+        margin-left: 1rem;
+    }
+    .fa {
+        font-size: 6rem;
+        margin-left: -10rem;
+        white-space: nowrap;
+    }
+    span.fa-chevron-down {
+        margin-top: 10rem;
+    }
+    .col-xs-2 {
+        padding-right: 0rem !important;
+    }   
 }
