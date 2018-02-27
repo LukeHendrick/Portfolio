@@ -25,6 +25,9 @@ a {
 a:hover {
     color: white;
 }
+a:focus {
+    color: white;
+}
 .thumb {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
@@ -112,7 +115,7 @@ span.fa-chevron-down {
 @media (min-width: 1300px) {
     .name {
         font-size: 14rem;
-        margin-top: 45%;
+        margin-top: 15rem;
         margin-left: -5rem;
     }
     .fa {
@@ -121,10 +124,10 @@ span.fa-chevron-down {
     }
     .myImg {
         margin-left: -25%;
-        margin-top: 29%
+        margin-top: 8rem;
     }
     span.fa-chevron-down {
-        margin-top: 10rem;
+        margin-top: 8rem;
         margin-left: 45%
     }
     span + span {
