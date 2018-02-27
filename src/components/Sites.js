@@ -13,7 +13,7 @@ var sites = [
         img: ChewsFood,
         gif: ChewsFoodGif,
         href: "https://chews-food.herokuapp.com/",
-        description: "Uses the Yelp API to return a restaurant, based on the selected food genres. Created with React, using a Node.JS backend.",
+        description: "Uses the Yelp API to return a restaurant, based on the selected food genres. Created with React, using a NodeJS backend.",
         index: 1,
 
     },
@@ -29,8 +29,8 @@ var sites = [
         name: "News Aggregator",
         img: News,
         gif: NewsGif,
-        href: 'https://news-aggregator-22950.firebaseapp.com',
-        description: "Selects from multiple available news sources, powered by the NewsAPI.",
+        href: 'https://newsaggregate.herokuapp.com/',
+        description: "Selects articles from multiple available news sources, powered by the NewsAPI. Setup as a PWA for mobile devices.",
         index: 3
     },
     {
