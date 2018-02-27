@@ -13,6 +13,7 @@ var sites = [
         img: ChewsFood,
         gif: ChewsFoodGif,
         href: "https://chews-food.herokuapp.com/",
+        description: "Uses the Yelp API to return a restaurant, based on the selected food genres. Created with React, using a Node.JS backend.",
         index: 1,
 
     },
@@ -21,6 +22,7 @@ var sites = [
         img: DrumMachine,
         gif: DrumMachineGif,
         href: "https://drum-machine-2d444.firebaseapp.com/",
+        description: "Simple drum machine, with two kits to choose from. Built with React and uses the HTML5 Audio API. ",
         index: 2,
     },
     {
@@ -28,6 +30,7 @@ var sites = [
         img: News,
         gif: NewsGif,
         href: 'https://news-aggregator-22950.firebaseapp.com',
+        description: "Selects from multiple available news sources, powered by the NewsAPI.",
         index: 3
     },
     {
@@ -35,6 +38,7 @@ var sites = [
         img: WeatherApp,
         gif: WeatherAppGif,
         href: "https://weather-app-540f9.firebaseapp.com/",
+        description: "Accesses the OpenWeather API to retrieve the week's forecast, with further details avilable for individual days.",
         index: 4
     },
 ];

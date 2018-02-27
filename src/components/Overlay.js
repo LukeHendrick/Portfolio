@@ -16,10 +16,11 @@ export default class Overlay extends Component {
                 show={this.props.show}
             >
                 <Modal.Header>
-                    <Modal.Title>{this.props.site.name}</Modal.Title>
+                    <Modal.Title><h1>{this.props.site.name}</h1></Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Image responsive className="modal-image" src={this.props.site.gif} /> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel illo commodi et! Porro nisi, sit perferendis impedit nemo totam commodi accusamus a quis illo eius neque laboriosam nam eos explicabo!
+                    <Image responsive className="modal-image" src={this.props.site.gif} /> 
+                    <h4>{this.props.site.description}</h4>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button href={this.props.site.href}>Go To Site</Button>
