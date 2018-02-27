@@ -20,7 +20,7 @@ var sites = [
         name: "Drum Machine",
         img: DrumMachine,
         gif: DrumMachineGif,
-        href: "https://drum-machine-43c9a.firebaseapp.com/",
+        href: "https://drum-machine-2d444.firebaseapp.com/",
         index: 2,
     },
     {
