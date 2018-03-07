@@ -37,8 +37,8 @@ var sites = [
         name: "Weather App",
         img: WeatherApp,
         gif: WeatherAppGif,
-        href: "https://weather-app-540f9.firebaseapp.com/",
-        description: "Accesses the OpenWeather API to retrieve the week's forecast, with further details avilable for individual days.",
+        href: "https://lhweatherapp.herokuapp.com/",
+        description: "Accesses the DarkSky API to retrieve the week's forecast, with further details avilable for individual days.",
         index: 4
     },
 ];
