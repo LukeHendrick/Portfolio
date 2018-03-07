@@ -1,6 +1,5 @@
 var DrumMachine = require("../images/DrumMachine.png");
 var WeatherApp = require("../images/WeatherApp.png");
-var Calculator = require('../images/Calculator.png');
 var News = require('../images/NewsAggregator.png');
 var ChewsFood = require('../images/ChewsFood.png');
 var ChewsFoodGif = require('../images/ChewsFoodGif.gif');
